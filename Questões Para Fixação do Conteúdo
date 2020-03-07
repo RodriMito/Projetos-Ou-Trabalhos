@@ -1,0 +1,8 @@
+print('=-=' * 8)
+print('Isso é Positive or Negative')
+print('=-=' * 8)
+n = int(input('Digite um número: '))
+if n >= 0:
+    print('POSITIVO')
+else:
+    print('NEGATIVO')
