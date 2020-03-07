@@ -1,0 +1,8 @@
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite outro: '))
+n3 = int(input('Digite mais um: '))
+a = n2 + n3
+if n1 > a:
+    print(f'{n1} é maior que {n2, n3} juntos')
+else:
+    print(f'{n1} é menor que {n2, n3} juntos')
