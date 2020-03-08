@@ -1,0 +1,9 @@
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite outro: '))
+a = n1 + n2
+r1 = a + 8
+r2 = a - 5
+if a > 20:
+    print(f'{a} é maior que 20 por isso será somado 8: {r1}')
+else:
+    print(f'{a} é menor que 20 por isso será subraido 5: {r2}')
