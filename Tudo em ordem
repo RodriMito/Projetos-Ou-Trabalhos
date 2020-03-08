@@ -1,0 +1,22 @@
+p = float(input('DIGITE 1° numero: '))
+s = float(input('DIGITE 2° numero : '))
+t = float(input('DIGITE 3° numero: '))
+
+print(f'A sequencia normal será: {p, s, t}')
+
+if t < s:
+    aux = t
+    terceiro = s
+    segundo = aux
+
+if s < p:
+    aux = s
+    s = p
+    p = aux
+
+if t < s:
+    aux = t
+    t = s
+    s = aux
+
+print(f'A sequencia crescente será: {p, s, t}')
