@@ -1,0 +1,5 @@
+print('=========Autonomia do Carro Flex========')
+km = float(input('Digite um valor de quilometros rodados: '))
+l = float(input('Digite o valor do tanque cheio: '))
+kml = km/l
+print(f'O resuldado em quilometros por litros será: {kml}')
