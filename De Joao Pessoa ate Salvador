@@ -1,0 +1,12 @@
+print('=========De Joao Pessoa ate Salvador========')
+from math import ceil
+a = int(input('Informe litros seu carro suporta: '))
+b = float(input('Quanto seu carro faz com 1litro de Etanol: '))
+c = float(input('Quanto o seu carro faz com 1litro de Gasolina: '))
+r1 = b * a
+r2 = c * a
+print('De Joao Pessoa até Salvador usando Etanol no tanque será nescessario', 925 / b,
+      'litros de etanol, serão nescessarias', ceil(925 / (a * b)), 'paradas para abastecer.')
+print('De Joao Pessoa até Salvador usando Gasolina no tanque será nescessario', 925 / c,
+      'litros de Gasolina, serão nescessarias', ceil(925 / (a * c)), 'paradas para abastecer.')
+
