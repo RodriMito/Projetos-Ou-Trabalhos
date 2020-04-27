@@ -1,0 +1,22 @@
+print('===EXERCICIO-2===')
+alunos = {}
+q = int(input('Digite a quantidade de alunos na sala: '))
+for c in range(q):
+    nome = input(f'Nome do aulo {c+1}: ')
+    nota = []
+    for b in range(4):
+        nota.append(float(input(f'Nota {b+1}: ')))
+    alunos[nome] = nota.copy()
+
+for k, v in list(alunos.items()):
+    media = (v[0] + v[1] + v[3])/4
+    if media >= 6:
+        print(f'O aluno {k} está APROVADO com a média {media:.1f}')
+    else:
+        print(f'O aluno {k} está REPROVADO com a média {media:.1f}')
+    print('Sendo notas: ', end='')
+    for c in range(len(v)):
+        if c != len(v) - 1:
+            print(v[c], end=', ')
+        else:
+            print(v[c])
